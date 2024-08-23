@@ -3,26 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>InnerwavePNW - Headshot Enhancements</title>
+    <title>InnerwavePNW - Professional Headshot Enhancements</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Professional Headshot Enhancements in Minutes</h1>
-        <h2>Elevate Your Headshots with Advanced AI & Photoshop Techniques</h2>
-        <button onclick="window.location.href='#services'">Get Started</button>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Welcome to InnerwavePNW</h1>
+            <p>Professional Headshot Enhancements in Minutes</p>
+            <a href="#portfolio" class="cta">Explore Portfolio</a>
+        </div>
     </header>
 
-    <section id="slider">
-        <!-- Add your before-and-after images here -->
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="project1.jpg" alt="Project 1">
+                <p>Corporate Headshot Enhancement</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="project2.jpg" alt="Project 2">
+                <p>Creative Headshot Enhancement</p>
+            </div>
+            <!-- Add more portfolio items here -->
+        </div>
     </section>
 
-    <section id="trust">
-        <!-- Client testimonials or company logos -->
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <p>We offer a range of headshot enhancement services tailored to your needs.</p>
+        <ul>
+            <li>Basic Enhancement</li>
+            <li>Standard Enhancement</li>
+            <li>Premium Enhancement</li>
+            <li>Bulk Orders</li>
+        </ul>
+        <a href="#contact" class="cta">Get Started</a>
     </section>
 
+    <!-- About Section -->
+    <section id="about">
+        <h2>About InnerwavePNW</h2>
+        <p>At InnerwavePNW, we specialize in elevating your headshots using advanced AI and Photoshop techniques.</p>
+        <p>Our mission is to provide high-quality, professional enhancements that help you make the best first impression.</p>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial">
+            <p>"InnerwavePNW transformed my headshot. I couldn't be happier!"</p>
+            <span>- Happy Client</span>
+        </div>
+        <!-- Add more testimonials here -->
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="request">Type of Request:</label>
+            <select id="request" name="request">
+                <option value="service">Service Inquiry</option>
+                <option value="project">Project Proposal</option>
+                <option value="question">General Question</option>
+            </select>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>© 2024 InnerwavePNW</p>
+        <div class="footer-content">
+            <p>© 2024 InnerwavePNW. All Rights Reserved.</p>
+            <ul class="social-icons">
+                <li><a href="#"><img src="facebook-icon.png" alt="Facebook"></a></li>
+                <li><a href="#"><img src="twitter-icon.png" alt="Twitter"></a></li>
+                <!-- Add more social icons as needed -->
+            </ul>
+        </div>
     </footer>
-</body>
-</html>
+
+</body

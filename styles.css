@@ -1,3 +1,4 @@
+/* Global Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,43 +7,184 @@ body {
     color: #333;
 }
 
-header {
+/* Navigation Bar */
+nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+}
+nav ul li {
+    margin: 0 20px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    color: #007BFF;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
     text-align: center;
-    padding: 50px 20px;
-    background-color: #fff;
 }
-
-h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
-
-h2 {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-}
-
-button {
+.hero .cta {
+    margin-top: 20px;
     padding: 10px 20px;
-    font-size: 1rem;
-    color: #fff;
     background-color: #007BFF;
-    border: none;
-    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
 }
-
-button:hover {
+.hero .cta:hover {
     background-color: #0056b3;
 }
 
-#slider, #trust {
-    padding: 20px;
+/* Portfolio Section */
+#portfolio {
+    padding: 40px 20px;
     text-align: center;
+    background-color: #fff;
+}
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding-top: 20px;
+}
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+.portfolio-item p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #555;
 }
 
-footer {
+/* Services Section */
+#services {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
     text-align: center;
-    padding: 20px;
+}
+#services ul {
+    list-style-type: none;
+    padding: 0;
+}
+#services ul li {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+#services .cta {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+#services .cta:hover {
+    background-color: #0056b3;
+}
+
+/* About Section */
+#about {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+#about p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Testimonials Section */
+#testimonials {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    text-align: center;
+}
+.testimonial {
+    max-width: 600px;
+    margin: 0 auto;
+    font-style: italic;
+    color: #555;
+}
+.testimonial span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Contact Section */
+#contact {
+    padding: 40px 20px;
+    background-color: #fff;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+form label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+form input, form select, form textarea {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+form button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
     background-color: #333;
-    color: #fff;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+.social-icons {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.social-icons li {
+    margin: 0 10px;
+}
+.social-icons li a img {
+    width: 24px;
+    height: 24px;
 }
